@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registration form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="main">
+            <h1>Registration form</h1>
+            <form method="post" action="InsertServlet">
+                <input type="text" placeholder="Enter your first name" name="fname">
+                <input type="text" placeholder="Enter your last name" name="lname">
+                <input type="email" placeholder="Enter your email address" name="email">
+                <input type="password" placeholder="Enter Password" name="pass">
+                <input type="number" placeholder="Enter your phone number" name="phone">
+                <input type="number" placeholder="Enter your age" name="age">
+                <select id="gender" name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <select id="city" name="city">
+                    <option>Select city</option>
+                    <option>Amreli</option>
+                    <option>Ahmedabad</option>
+                    <option>Bhavnagar</option>
+                    <option>Jamnagar</option>
+                    <option>Junagadh</option>
+                    <option>Morbi</option>
+                    <option>Porbandar</option>
+                    <option>Rajkot</option>
+                    <option>Surat</option>
+                </select>
+                <input class="button" type="submit" name="register" value="Register">
+                <a href="ViewServlet"><input class="button" id="records" type="button" name="records" value="All Records"></a>  
+            </form>
+        </div>
+    </body>
+</html>
+    
